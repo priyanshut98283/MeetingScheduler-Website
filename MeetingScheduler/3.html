@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduled</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+        .container{
+            height: 100vh;
+            background-color: #118ab2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            animation: popup 0.5s linear 0s 1  ;
+        }
+        @keyframes popup {
+            0%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        .logoutt{
+            display: block;
+            font-size: 1rem;
+            background-color: #106d8c;
+            padding: 1rem 2rem;
+            align-text: center;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Meeting Scheduled!
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <a href="https://meet.google.com/wbg-gbfn-dgx">
+        <div class="logoutt">
+            Join Meeting
+        </div></a>
+        <a href="https://calendar.google.com/calendar/u/0/r">
+        <div class="logoutt">
+            Add to Calendar
+        </div></a>
+
+        <a href="index.html">
+        <div class="logoutt">
+            logout
+        </div></a>
+    </div>
+</body>
+</html>

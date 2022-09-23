@@ -1,0 +1,143 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    /* overflow-x: hidden; */
+}
+
+.container{
+    width:90vw;
+    height: 100vh;
+    margin: 5rem;
+}
+
+.d1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-box{
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    margin-left: -2rem;
+    cursor: pointer;
+    border: 0.05rem solid Black;
+    background-color: rgba(88, 141, 246, 0.897);
+    
+}
+.date-box:hover{
+    background-color: rgb(46, 116, 255);
+}
+
+.availibility{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    background-color: rgba(255, 0, 0, 0.755);
+    display: inline-block;
+    margin: 0 2rem 0 2rem;
+    width: 2rem;
+    height: 2rem;
+
+}
+.box2{
+    background-color: #f8961e;
+    display: inline-block;
+    margin: 0 2rem 0 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+.box3{
+    background-color: #43aa8b;
+    display: inline-block;
+    margin: 0 2rem 0 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+.box4{
+    background-color: 277da1;
+    display: inline-block;
+    margin: 0 2rem 0 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+.box5{
+    background-color: rgb(222, 222, 222);
+    display: inline-block;
+    margin: 0 2rem 0 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.slots{
+    background-color: rgb(222, 222, 222);
+    padding: 0 3rem;
+}
+.slots:hover{
+    position: relative;
+    box-shadow: 0px 0px 20px 10px rgba(228, 225, 64, 0.9);
+    z-index: 5;
+}
+pre{
+    background-color:transparent;
+}
+#_5am{
+    background-color:rgba(255, 0, 0, 0.755) !important;
+}
+
+#_7am{
+    background-color: rgba(255, 0, 0, 0.755) !important;
+}
+#_10am{
+    background-color: #43aa8b !important;
+}
+#_11am{
+    background-color: #43aa8b !important;
+}
+#_12pm{
+    background-color: 277da1 !important;
+}
+#_2pm{
+    background-color: #f8961e !important;
+}
+#_4pm{
+    background-color: #f8961e !important;
+}
+#_5pm{
+    background-color: rgba(255, 0, 0, 0.755) !important;
+}
+
+.active-shadow{
+    box-shadow: 0px 0px 20px 10px black;
+    z-index: 11;
+}
+/* .calander{
+}
+.active-calander{
+    visibility: visible;
+} */
+
+.next{
+    background-color: #38a3a5;
+    display: inline-block;
+    padding: 1rem 3rem;
+    float: right;
+    margin: 2rem;
+    cursor: pointer;
+}
+.next:hover{
+    box-shadow: 0px 0px 4px 4px rgb(93, 51, 210);
+}
+.next1 a{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}

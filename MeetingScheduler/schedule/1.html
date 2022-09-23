@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>schedule</title>
+    <link rel="stylesheet" href="1.css">
+    <script src="1.js"></script>
+
+    <!-- for calander -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+
+    <!-- Importing icon cdn -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Importing core bootstrap cdn -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" -->
+        <!-- integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> --> 
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+    <!-- Importing datepicker cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+    </script>
+
+    <!-- for calander -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="d1">
+            <div class="date-box" onclick="toggleCalander()">
+                Select Date
+            </div>
+            <div class="availability">
+                    <div class="box1"></div>All Booked
+                    <div class="box2"></div>Slot available for individual
+                    <div class="box3"></div>Slot available for group
+                    <div class="box4"></div>Slot available for Presentation
+                    <div class="box5"></div>Slot Unavailable
+            </div>
+        </div>
+        <p></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <div class="slot">
+            <div class="slots" id="_1am">
+                <br>
+                1 AM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_2am">
+                <br>
+                2 AM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_3am">
+                <br>
+                3 AM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_4am">
+                <br>
+                4 AM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_5am" onclick="toggleshadow5am()">
+                <br>
+                <pre>5 AM           (No slots available)</pre>
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_6am">
+                <br>
+                6 AM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_7am" onclick="toggleshadow7am()">
+                <br>
+                <pre>7 AM           (No slots available)</pre>
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_8am">
+                <br>
+                8 AM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_9am">
+                <br>
+                9 AM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_10am" onclick="toggleshadow10am()">
+                <br>
+                <pre>10 AM           (7/40 slots available)</pre>
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_11am" onclick="toggleshadow11am()">
+                <br>
+                <pre>11 AM           (21/68 slots available)</pre>
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_12pm" onclick="toggleshadow12pm()">
+                <br>
+                <pre>12 PM          (45/89 slots available)</pre>
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_1pm">
+                <br>
+                1 PM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_2pm" onclick="toggleshadow2pm()">
+                <br>
+                <pre>2 PM           (19 slots available)</pre>
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_3pm">
+                <br>
+                3 PM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_4pm" onclick="toggleshadow4pm()">
+                <br>
+                <pre>4 PM            (8 slots available)</pre>
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_5pm" onclick="toggleshadow5pm()">
+                <br>
+                <pre>5 PM            (No slots available)</pre>
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_6pm">
+                <br>
+                6 PM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_7pm">
+                <br>
+                7 PM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_8pm">
+                <br>
+                8 PM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_9pm">
+                <br>
+                9 PM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_10pm">
+                <br>
+                10 PM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_11pm">
+                <br>
+                11 PM
+                <br>
+            </div>
+            <hr>
+            <div class="slots" id="_12am">
+                <br>
+                12 AM
+                <br>
+            </div>
+            <hr>
+        </div>
+
+        <a href="2.html" class="next1"><div class="next">Next</div></a>
+    </div>
+
+
+    <!-- FOR CALANDER -->
+    <!-- <div class="calander">
+        <div class="form-group m-1">
+            <label class="font-weight-bold" for="dob">
+                Date of Birth:
+            </label>
+
+            
+            <div class="input-group date">
+                
+                <span class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-calendar" onclick="setDatepicker(this)">
+                        </i>
+                    </span>
+                </span>
+
+                
+                <input class="form-control" type="text" name="dob" id="dob" value="">
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="meeting.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+        .container {
+            margin: 50px 150px;
+            padding: 50px;
+            position: absolute;
+            top: 0%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box1 {
+            cursor: pointer;
+            height: 200px;
+            width: 150px;
+            border-radius: 20px;
+            background-color: rgba(228, 234, 239, 0.584);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 0px 20px 5px rgba(151, 155, 158, 0.287);
+            margin: 40px -70px;
+            padding: 50px;
+            position: relative;
+            margin-left: -500px;
+            z-index: auto;
+        }
+        .box2 {
+            cursor: pointer;
+            height: 200px;
+            width: 150px;
+            border-radius: 20px;
+            background-color: rgba(228, 234, 239, 0.584);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 0px 20px 5px rgba(151, 155, 158, 0.287);
+            margin: 40px -70px;
+            margin-left: 200px;
+            padding: 50px;
+            position: relative;
+            z-index: auto;
+        }
+        .box2:hover {
+            transform: scale(1.05);
+            z-index: 3;
+            /* filter: hue-rotate(10rad); */
+            transition-duration: 0.4s;
+            background-color: rgb(228, 234, 239);
+            box-shadow: 0px 0px 20px 10px rgba(188, 193, 197, 0.811);
+        }
+        .box1:not(:first-child) {
+            /* margin-top: 90px; */
+            /* margin-left: 10px; */
+        }
+
+        .box1:hover {
+            transform: scale(1.05);
+            z-index: 3;
+            /* filter: hue-rotate(10rad); */
+            transition-duration: 0.4s;
+            background-color: rgb(228, 234, 239);
+            box-shadow: 0px 0px 20px 10px rgba(188, 193, 197, 0.811);
+        }
+        #box-g-2{
+
+            animation: moving-box 20s linear infinite, changing-hue 5s ease infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+        #box-g-1 {
+            animation: moving-box 15s linear infinite, changing-hue 5s ease infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+        @keyframes moving-box {
+            0% {
+                transform: translateX(-150%) rotateZ(0deg);
+            }
+
+            50% {
+                transform: translateX(150%) rotateZ(360deg);
+            }
+
+            100% {
+                transform: translateX(-150%) rotateZ(0deg);
+            }
+        }
+
+        @keyframes changing-he {
+            0% {
+                filter: hue-rotate(10.142rad) blur(0px);
+            }
+
+            50% {
+                filter: hue-rotate(42.142rad) blur(0px);
+            }
+
+            100% {
+                filter: hue-rotate(10.142rad) blur(0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 1920 1080">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: url(#linear-gradient);
+                }
+
+                .cls-2 {
+                    fill: url(#linear-gradient-2);
+                }
+            </style>
+            <linearGradient id="linear-gradient" x1="486.17" y1="1360.69" x2="1433.83" y2="-280.69"
+                gradientTransform="matrix(1, 0, 0, -1, 0, 1080)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="aqua" />
+                <stop offset="1" stop-color="#f0f" stop-opacity="0.8" />
+            </linearGradient>
+            <linearGradient id="linear-gradient-2" x1="779.24" y1="720.71" x2="993.94" y2="348.85"
+                gradientTransform="matrix(1, 0, 0, -1, 73.41, 1074.78)" xlink:href="#linear-gradient" />
+        </defs>
+        <g id="bg">
+            <rect class="cls-1" width="1920" height="1080" />
+        </g>
+        <g id="box-g-1">
+            <rect class="cls-2" x="791" y="371" width="338" height="338" rx="44.19"
+                transform="translate(-100.66 836.98) rotate(-45)" />
+        </g>
+        <g id="box-g-2">
+            <rect class="cls-2" x="791" y="371" width="338" height="338" rx="44.19"
+                transform="translate(-100.66 836.98) rotate(-45)" />
+        </g>
+    </svg>
+
+    <!-- <div class="container">
+
+        <div class="box1">
+            <h3>Lorem, ipsum</h3><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque deleniti nihil,
+            reprehenderit non necessitatibus.</div>
+        <div class="box1">
+            <h3>Lorem, ipsum</h3><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque deleniti nihil,
+            reprehenderit non necessitatibus.</div>
+    </div> -->
+    
+    <div class="container">
+        <div class="about"><h2>Login for Meeting the Schedule</h2></div>
+        <div class="box1">
+        <div class="user" onclick="location.href='login.html';" >
+            <div class="text1"><b>USER</b></div></div><h5>Login for User Portal</h5></div>
+       
+        <div class="box2">
+        <div class="admin" onclick="location.href='login2.html';" >
+            <div class="text2"><b>ADMIN</b></div></div><h5>Login for Admin Portal</h5></div>
+    </div>
+
+    
+
+    <script src="meeting.js"></script>
+</body>
+
+</html>

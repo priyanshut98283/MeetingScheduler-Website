@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<style>
+    *{
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        /* height: 100vh; */
+        /* overflow-y: hidden; */
+    }
+    .main{
+        height: 100vh;
+        overflow: hidden;
+    }
+    input,
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 70%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        font-family: sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 15rem;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="container">
+            Enter the details <br>to Book Slots...
+        </div>
+
+
+        <div>
+            <form action="3.html">
+                <label for="fname" >First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                <br>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <br>
+                <label for="country">Email ID</label>
+                <input type="email" id="" name="" placeholder="Your Email ID" required>
+                <br>
+                <label for="country">Description</label>
+                <input type="text" id="" name="" placeholder="Description about the meeting" required>
+                
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
